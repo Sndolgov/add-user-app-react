@@ -1,0 +1,22 @@
+.input-form {
+    width: 100%;
+}
+
+.input-form input{
+    width: 100%;
+    padding: 1px 1px;
+    margin: 8px auto;
+    border-width: 1px;
+    border-color: gray;
+    box-sizing: border-box;
+}
+
+.input-form label {
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    .input-form input{
+        padding: 5px 5px;
+    }
+}
