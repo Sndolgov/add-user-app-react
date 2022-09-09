@@ -3,6 +3,7 @@ import InputField from "../input/InputField";
 import Button from '../button/Button'
 import {useState} from "react";
 import ModalWindow from "../modal/ModalWindow";
+import Wrapper from "../helpers/Wrapper";
 
 const validation = {
     // age: "Age must be >= 0"
@@ -71,7 +72,7 @@ const UserCreatorForm = (props) => {
     }
 
     return (
-        <>
+        <Wrapper>
             <form className={`${styles['user-form']}`}>
                 <div className={`${styles['form-fields']}`}>
                     <InputField label={'Name'} type='text' value={name} onChangeHandler={onChangeNameHandler}/>
@@ -85,7 +86,7 @@ const UserCreatorForm = (props) => {
                 title='Wrong value'
                 text={errors}
             />
-        </>
+        </Wrapper>
     )
 }
 
